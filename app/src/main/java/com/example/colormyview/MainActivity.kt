@@ -32,6 +32,16 @@ class MainActivity : AppCompatActivity() {
             R.id.yellow_button -> box_four_text.setBackgroundResource(R.color.my_yellow)
             R.id.green_button -> box_five_text.setBackgroundResource(R.color.my_green)
 
+            R.id.box_six_text -> view.setBackgroundResource(R.drawable.image_six)
+            R.id.box_seven_text -> view.setBackgroundResource(R.drawable.image_seven)
+            R.id.box_eight_text -> view.setBackgroundResource(R.drawable.image_eight)
+            R.id.box_nine_text -> view.setBackgroundResource(R.drawable.image_nine)
+            R.id.box_ten_text -> view.setBackgroundResource(R.drawable.image_ten)
+            R.id.box_eleven_text -> view.setBackgroundResource(R.drawable.image_eleven)
+            R.id.box_twelve_text -> view.setBackgroundResource(R.drawable.image_twelve)
+            R.id.box_thirteen_text -> view.setBackgroundResource(R.drawable.image_thirteen)
+            R.id.constraint_layout -> view.setBackgroundColor(0xFF00FF00.toInt())
+
             else -> view.setBackgroundColor(Color.LTGRAY)
         }
     }
@@ -49,11 +59,22 @@ class MainActivity : AppCompatActivity() {
         val greenButton = findViewById<TextView>(R.id.green_button)
         val yellowButton = findViewById<TextView>(R.id.yellow_button)
 
+        val boxSixText = findViewById<TextView>(R.id.box_six_text)
+        val boxSevenText = findViewById<TextView>(R.id.box_seven_text)
+        val boxEightText = findViewById<TextView>(R.id.box_eight_text)
+        val boxNineText = findViewById<TextView>(R.id.box_nine_text)
+        val boxTenText = findViewById<TextView>(R.id.box_ten_text)
+        val boxElevenText = findViewById<TextView>(R.id.box_eleven_text)
+        val boxTwelveText = findViewById<TextView>(R.id.box_twelve_text)
+        val boxThirteenText = findViewById<TextView>(R.id.box_thirteen_text)
+
         val clickableViews: List<View> =
             listOf(
                 boxOneText, boxTwoText, boxThreeText,
                 boxFourText, boxFiveText, rootConstraintLayout,
-                redButton, greenButton, yellowButton
+                redButton, greenButton, yellowButton, boxSixText, boxSevenText,
+                boxEightText, boxNineText, boxTenText, boxElevenText,
+                boxTwelveText, boxThirteenText
             )
 
         for (item in clickableViews) {
